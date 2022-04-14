@@ -1,6 +1,14 @@
 -- What were the winningest teams in each season of the 
 -- modern era (from 1960-present), listed by winningest teams first?
 
+
+SELECT year, name, wins FROM teams
+WHERE year >= 1960
+ORDER BY wins;
+
+
+
+
 -- Expected result: 61 rows, starting with
 --
 -- +------+-------------------------------+-----------+
